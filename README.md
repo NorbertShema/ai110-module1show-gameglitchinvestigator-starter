@@ -25,12 +25,12 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-### ✅ Game Purpose
+### Game Purpose
 The purpose of the game is to guess a randomly generated number within a given range. The game provides hints ("higher" or "lower") after each guess to guide the player. If the player guesses the correct number within the allowed attempts, they win; otherwise, they lose. The game also includes different difficulty levels that adjust the range and challenge.
 
 ---
 
-### 🐞 Bugs Found
+### Bugs Found
 
 - The difficulty levels were not properly aligned with the number ranges, making the game inconsistent in challenge.
 - The hint logic was reversed:
@@ -39,7 +39,7 @@ The purpose of the game is to guess a randomly generated number within a given r
 
 ---
 
-### 🔧 Fixes Applied
+### Fixes Applied
 
 - Corrected the hint logic so that it accurately tells the player to go higher or lower based on their guess.
 - Updated the difficulty levels to reflect the appropriate number ranges properly, ensuring a balanced gameplay experience.
