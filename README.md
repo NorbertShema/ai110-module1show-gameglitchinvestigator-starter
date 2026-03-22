@@ -25,23 +25,30 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
+### ✅ Game Purpose
+The purpose of the game is to guess a randomly generated number within a given range. The game provides hints ("higher" or "lower") after each guess to guide the player. If the player guesses the correct number within the allowed attempts, they win; otherwise, they lose. The game also includes different difficulty levels that adjust the range and challenge.
 
-The games purpose was to guess a number between the given range and the game would help by giving hints. If the guessed number is the secret number you win. Otherwise the game give a fixed number of attempts which you lose if you finish the without guessing the correct number . The game also has difficulty levels.
+---
 
-- [ ] Detail which bugs you found.
+### 🐞 Bugs Found
 
-The range matched the the difficulty level was not correct as the higher the range the more difficult it is to guess the secret number.
-The hint were reversed. If the guessed number is lower than the secret the game gave an opposite hint to go lower rather than going higher, vice versa.
+- The difficulty levels were not properly aligned with the number ranges, making the game inconsistent in challenge.
+- The hint logic was reversed:
+  - When the guess was lower than the secret number, the game incorrectly suggested going lower.
+  - When the guess was higher than the secret number, the game incorrectly suggested going higher.
 
-- [ ] Explain what fixes you applied.
+---
 
-The hint were fixed and correct depending on the guessed number
-The level of difficulty reflected and was well matched with the range of input for the guessed number
+### 🔧 Fixes Applied
 
+- Corrected the hint logic so that it accurately tells the player to go higher or lower based on their guess.
+- Updated the difficulty levels to reflect the appropriate number ranges properly, ensuring a balanced gameplay experience.
+
+---
 
 ## 📸 Demo
 
+![Game Screenshot](./Screenshot%202026-03-21%20at%209.24.22%E2%80%AFPM.png)
 
 
 ## 🚀 Stretch Features
